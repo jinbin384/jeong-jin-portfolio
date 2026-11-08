@@ -23,7 +23,7 @@ const entries = [
     highlight: "2개 제품 라인 숏폼 광고 콘텐츠 전담",
     metrics: [
       { label: "담당 제품", value: "2종", sub: "헬리코컷 부스터·덴티플라" },
-      { label: "활용 AI 툴", value: "6종+", sub: "Higgsfield·Kling·Midjourney·Magnific·HeyGen·ElevenLabs" },
+      { label: "활용 AI 툴", value: "6종+", sub: "Higgsfield · Kling · Midjourney · Magnific · HeyGen · ElevenLabs" },
       { label: "포맷", value: "Shorts·Reels", sub: "숏폼 광고" },
     ] as Metric[],
   },
@@ -206,7 +206,7 @@ function MetricCard({ metric }: { metric: Metric }) {
       {metric.sub && (
         <div
           className="text-muted-foreground/50 mt-0.5"
-          style={{ fontFamily: "var(--font-mono)", fontSize: "9px" }}
+          style={{ fontFamily: "var(--font-mono)", fontSize: "9px", overflowWrap: "anywhere" }}
         >
           {metric.sub}
         </div>
