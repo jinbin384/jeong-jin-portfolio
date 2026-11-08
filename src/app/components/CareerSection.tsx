@@ -11,7 +11,24 @@ type Metric = {
 
 const entries = [
   {
-    period: "2026.03 — 현재",
+    period: "2026.07 — 현재",
+    company: "테라퓨젠바이오",
+    role: "콘텐츠PD (사원)",
+    type: "인하우스",
+    icon: TrendingUp,
+    contribution: 90,
+    description:
+      "헬스케어 건강기능식품 브랜드(헬리코컷·콜레스컷·조인트본 부스터·덴티플라) 숏폼 광고 기획·제작. Higgsfield·Kling·Midjourney·Magnific·ElevenLabs 등 AI 툴을 활용한 영상·이미지·보이스 제작, 캐릭터 IP 개발, ASMR 리빌 포맷 기획, 식약처 광고 가이드라인을 고려한 스크립트 작성.",
+    tags: ["숏폼 광고", "AI 영상 제작", "건강기능식품", "스크립트 기획"],
+    highlight: "4개 제품 라인 숏폼 광고 콘텐츠 전담",
+    metrics: [
+      { label: "담당 제품", value: "4종", sub: "헬리코컷·콜레스컷 등" },
+      { label: "활용 AI 툴", value: "5종+", sub: "Higgsfield·Kling·Midjourney·Magnific·ElevenLabs" },
+      { label: "포맷", value: "Shorts·Reels", sub: "9:16 숏폼 광고" },
+    ] as Metric[],
+  },
+  {
+    period: "2026.03 — 2026.06",
     company: "밀스턴",
     role: "콘텐츠팀 대리 (팀장)",
     type: "인하우스",
