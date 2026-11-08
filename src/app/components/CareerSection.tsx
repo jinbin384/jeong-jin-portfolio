@@ -18,9 +18,9 @@ const entries = [
     icon: TrendingUp,
     contribution: 90,
     description:
-      "헬스케어 건강기능식품 브랜드(헬리코컷·콜레스컷·조인트본 부스터·덴티플라) 숏폼 광고 기획·제작. Higgsfield·Kling·Midjourney·Magnific·ElevenLabs 등 AI 툴을 활용한 영상·이미지·보이스 제작, 캐릭터 IP 개발, ASMR 리빌 포맷 기획, 식약처 광고 가이드라인을 고려한 스크립트 작성.",
+      "헬스케어 건강기능식품 브랜드(헬리코컷 부스터·덴티플라) 숏폼 광고 기획·촬영·제작. Higgsfield·Kling·Midjourney·Magnific·HeyGen·ElevenLabs 등 AI 툴을 활용한 영상·이미지·보이스 제작.",
     tags: ["숏폼 광고", "AI 영상 제작", "건강기능식품", "스크립트 기획"],
-    highlight: "4개 제품 라인 숏폼 광고 콘텐츠 전담",
+    highlight: "2개 제품 라인 숏폼 광고 콘텐츠 전담",
     metrics: [
       { label: "담당 제품", value: "4종", sub: "헬리코컷·콜레스컷 등" },
       { label: "활용 AI 툴", value: "5종+", sub: "Higgsfield·Kling·Midjourney·Magnific·HeyGen·ElevenLabs" },
