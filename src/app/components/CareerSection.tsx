@@ -23,7 +23,7 @@ const entries = [
     highlight: "4개 제품 라인 숏폼 광고 콘텐츠 전담",
     metrics: [
       { label: "담당 제품", value: "4종", sub: "헬리코컷·콜레스컷 등" },
-      { label: "활용 AI 툴", value: "5종+", sub: "Higgsfield·Kling·Midjourney·Magnific·ElevenLabs" },
+      { label: "활용 AI 툴", value: "5종+", sub: "Higgsfield·Kling·Midjourney·Magnific·HeyGen·ElevenLabs" },
       { label: "포맷", value: "Shorts·Reels", sub: "9:16 숏폼 광고" },
     ] as Metric[],
   },
