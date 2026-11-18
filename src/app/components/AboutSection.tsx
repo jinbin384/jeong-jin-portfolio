@@ -74,7 +74,7 @@ export function AboutSection() {
             >
               <p>
                 안녕하세요, 7년 차 영상 PD <strong className="text-foreground">정진</strong>입니다.
-                KBS, MBC, tvN, JTBC 등 공중파 방송사 조연출로 기본기를 쌓은 뒤, 유튜브·OTT 웹예능 PD로 1인 제작 역량을 키웠습니다.
+                KBS, tvN, JTBC 등 방송사 조연출로 기본기를 쌓은 뒤, 유튜브·OTT 웹예능 PD로 1인 제작 역량을 키웠습니다.
               </p>
               <p>
                 현재는 인하우스 콘텐츠팀 팀장으로서 숏폼 마케팅 시스템을 구축하고, AI 프로그램을 적극 활용해

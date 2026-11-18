@@ -124,10 +124,10 @@ const entries = [
     contribution: 30,
     description:
       "tvN '그때 나는 내가 되기로 했다', JTBC '위대한 배태랑', MBC every1 '대한외국인', TV조선 '엄마의 봄날', KBS '물질은 인간에게 무엇인가', JTBC '쉘 위 치킨' 조연출. 촬영 세팅, 편집 세팅, 종편 보조, 예고 제작, 마스터 납품 담당.",
-    tags: ["tvN", "JTBC", "MBC", "KBS", "TV조선"],
-    highlight: "메이저 방송사 5곳, 6개 프로그램 조연출",
+    tags: ["tvN", "JTBC", "MBC every1", "KBS", "TV조선"],
+    highlight: "방송사 5곳, 6개 프로그램 조연출",
     metrics: [
-      { label: "참여 방송사", value: "5곳", sub: "tvN·JTBC·MBC·KBS·TV조선" },
+      { label: "참여 방송사", value: "5곳", sub: "tvN·JTBC·MBC every1·KBS·TV조선" },
       { label: "참여 프로그램", value: "6편" },
       { label: "경력 기간", value: "2년 5개월" },
     ] as Metric[],
@@ -369,7 +369,7 @@ export function CareerSection() {
           transition={{ duration: 0.8, delay: 0.25 }}
           className="text-muted-foreground mb-16 max-w-xl leading-relaxed"
         >
-          tvN, JTBC, MBC 등 메이저 방송사부터 유튜브 웹예능 PD, 인하우스 브랜드 팀장까지 —
+          tvN, JTBC, KBS 등 방송사부터 유튜브 웹예능 PD, 인하우스 브랜드 팀장까지 —
           다양한 플랫폼을 섭렵한 7년간의 압축 성장 기록입니다.
         </motion.p>
 
