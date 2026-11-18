@@ -1,15 +1,7 @@
 import { useRef, useState } from "react";
 import { motion, useInView } from "motion/react";
-import { Mail, ExternalLink, ArrowUpRight } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import profilePhoto from "../../assets/profile.jpg";
-
-const links = [
-  {
-    label: "연락처",
-    handle: "010-7130-9384",
-    href: "tel:01071309384",
-  },
-];
 
 export function ContactSection() {
   const ref = useRef(null);
@@ -49,8 +41,25 @@ export function ContactSection() {
           </span>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
-          {/* Left */}
+        <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,24rem)_1fr] gap-12 lg:gap-20 items-center">
+          {/* Left: photo */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="w-full max-w-sm"
+          >
+            <div className="border border-border p-2">
+              <img
+                src={profilePhoto}
+                alt="정진 프로필 사진"
+                className="w-full aspect-[4/5] object-cover object-top"
+                loading="lazy"
+              />
+            </div>
+          </motion.div>
+
+          {/* Right: text + contacts */}
           <div>
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
@@ -110,57 +119,26 @@ export function ContactSection() {
               </button>
               <div className="mt-2 h-px bg-foreground/10 max-w-xs" />
             </motion.div>
-          </div>
 
-          {/* Right: photo + links */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="w-full max-w-sm lg:ml-auto"
-          >
-            <div className="border border-border p-2 mb-4">
-              <img
-                src={profilePhoto}
-                alt="정진 프로필 사진"
-                className="w-full aspect-[4/5] object-cover object-top"
-                loading="lazy"
-              />
-            </div>
-          <div className="space-y-px border border-border">
-            {links.map(({ label, handle, href }) => (
+            {/* Phone */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.8, delay: 0.45 }}
+              className="mt-6"
+            >
               <a
-                key={label}
-                href={href}
-                target={href.startsWith("http") ? "_blank" : undefined}
-                rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="flex items-center justify-between px-6 py-5 bg-background hover:bg-card transition-colors group"
+                href="tel:01071309384"
+                className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
               >
-                <div className="flex items-center gap-4">
-                  <ExternalLink size={14} className="text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
-                  <div>
-                    <div
-                      className="text-muted-foreground"
-                      style={{ fontFamily: "var(--font-mono)", fontSize: "10px", letterSpacing: "0.15em" }}
-                    >
-                      {label.toUpperCase()}
-                    </div>
-                    <div
-                      className="text-foreground group-hover:text-primary transition-colors mt-0.5"
-                      style={{ fontFamily: "var(--font-mono)", fontSize: "12px" }}
-                    >
-                      {handle}
-                    </div>
-                  </div>
-                </div>
-                <ArrowUpRight
-                  size={14}
-                  className="text-muted-foreground group-hover:text-primary transition-colors group-hover:translate-x-0.5 group-hover:-translate-y-0.5 duration-200"
-                />
+                <Phone size={16} className="text-primary" />
+                <span style={{ fontFamily: "var(--font-mono)", fontSize: "0.95rem", letterSpacing: "0.05em" }}>
+                  010-7130-9384
+                </span>
               </a>
-            ))}
+              <div className="mt-2 h-px bg-foreground/10 max-w-xs" />
+            </motion.div>
           </div>
-          </motion.div>
         </div>
 
         {/* Footer */}
