@@ -4,11 +4,6 @@ import { Mail, ExternalLink, ArrowUpRight } from "lucide-react";
 
 const links = [
   {
-    label: "이메일",
-    handle: "wjdwls44@gmail.com",
-    href: "mailto:wjdwls44@gmail.com",
-  },
-  {
     label: "연락처",
     handle: "010-7130-9384",
     href: "tel:01071309384",

@@ -103,16 +103,6 @@ const projects: Project[] = [
       { label: "30회", href: "https://youtu.be/IWS0nfBwbcE" },
     ],
   },
-  {
-    title: "JTBC 지킬박사와 가이드",
-    period: "2023.12 — 2024.01",
-    platform: "JTBC",
-    role: "서브 PD",
-    genre: "교양 토크쇼",
-    description:
-      "JTBC 교양 토크쇼. 기획·촬영 세팅, 방송 20분 분량 편집 및 종편 담당.",
-    links: [],
-  },
 ];
 
 function ProjectCard({ project, index, inView }: { project: Project; index: number; inView: boolean }) {
