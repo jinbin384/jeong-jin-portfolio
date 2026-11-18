@@ -17,6 +17,19 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "테라퓨젠바이오 숏폼 광고",
+    period: "2026.07 — 현재",
+    platform: "YouTube Shorts · Instagram Reels",
+    role: "콘텐츠PD",
+    genre: "숏폼 광고 · AI 영상",
+    description:
+      "헬리코컷 부스터·덴티플라 숏폼 광고 기획·촬영·제작. Higgsfield·Kling·Midjourney·Magnific·HeyGen·ElevenLabs 등 AI 툴을 활용한 영상·이미지·보이스 제작.",
+    links: [
+      { label: "제작 영상 보기", href: "https://drive.google.com/drive/folders/1Svq8AO7qTtWHlw7G1PvWbXn2dlFz0G32?usp=drive_link" },
+    ],
+    featured: true,
+  },
+  {
     title: "연애법정 시즌 1·2",
     period: "2022.05 — 2022.10",
     platform: "OTT 바바요 · YouTube",
