@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { motion, useInView } from "motion/react";
 import { Mail, ExternalLink, ArrowUpRight } from "lucide-react";
+import profilePhoto from "../../assets/profile.jpg";
 
 const links = [
   {
@@ -111,13 +112,22 @@ export function ContactSection() {
             </motion.div>
           </div>
 
-          {/* Right: links */}
+          {/* Right: photo + links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="space-y-px border border-border"
+            className="w-full max-w-sm lg:ml-auto"
           >
+            <div className="border border-border p-2 mb-4">
+              <img
+                src={profilePhoto}
+                alt="정진 프로필 사진"
+                className="w-full aspect-[4/5] object-cover object-top"
+                loading="lazy"
+              />
+            </div>
+          <div className="space-y-px border border-border">
             {links.map(({ label, handle, href }) => (
               <a
                 key={label}
@@ -149,6 +159,7 @@ export function ContactSection() {
                 />
               </a>
             ))}
+          </div>
           </motion.div>
         </div>
 
