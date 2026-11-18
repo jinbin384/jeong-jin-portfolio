@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useInView } from "motion/react";
-import { ExternalLink, Play } from "lucide-react";
+import { Play } from "lucide-react";
 
 type ProjectLink = { label: string; href: string };
 
@@ -267,25 +267,6 @@ export function ProjectSection() {
           ))}
         </div>
 
-        {/* Portfolio link */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="mt-12 flex justify-center"
-        >
-          <a
-            href="https://drive.google.com/file/d/1VVobjBgQs_DhpwkXj37iRi4k7-T1G8Ge/view?usp=drive_link"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-3 px-8 py-4 border border-border text-muted-foreground hover:border-primary hover:text-primary transition-colors"
-          >
-            <ExternalLink size={14} />
-            <span style={{ fontFamily: "var(--font-mono)", fontSize: "11px", letterSpacing: "0.2em" }}>
-              전체 포트폴리오 보기 (PDF)
-            </span>
-          </a>
-        </motion.div>
       </div>
     </section>
   );
